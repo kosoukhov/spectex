@@ -43,14 +43,16 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+				'/' => 'site/index',
+				'<controller:[\w-]+>' => '<controller>/index',
+				'<controller:[\w-]+>/<action:[\w-]+>/<id:\d+>' => '<controller>/<action>',
+				'robots.txt' => 'site/robots',
             ],
         ],
-        */
     ],
     'params' => $params,
 ];
