@@ -80,27 +80,14 @@ $requirements = array(
         'by' => 'All DB-related classes',
     ),
     array(
-        'name' => 'PDO SQLite extension',
-        'mandatory' => false,
-        'condition' => extension_loaded('pdo_sqlite'),
-        'by' => 'All DB-related classes',
-        'memo' => 'Required for SQLite database.',
-    ),
-    array(
         'name' => 'PDO MySQL extension',
         'mandatory' => false,
         'condition' => extension_loaded('pdo_mysql'),
         'by' => 'All DB-related classes',
         'memo' => 'Required for MySQL database.',
     ),
-    array(
-        'name' => 'PDO PostgreSQL extension',
-        'mandatory' => false,
-        'condition' => extension_loaded('pdo_pgsql'),
-        'by' => 'All DB-related classes',
-        'memo' => 'Required for PostgreSQL database.',
-    ),
     // Cache :
+	/*
     array(
         'name' => 'Memcache extension',
         'mandatory' => false,
@@ -108,6 +95,7 @@ $requirements = array(
         'by' => '<a href="http://www.yiiframework.com/doc-2.0/yii-caching-memcache.html">MemCache</a>',
         'memo' => extension_loaded('memcached') ? 'To use memcached set <a href="http://www.yiiframework.com/doc-2.0/yii-caching-memcache.html#$useMemcached-detail">MemCache::useMemcached</a> to <code>true</code>.' : ''
     ),
+	 */
     // CAPTCHA:
     array(
         'name' => 'GD PHP extension with FreeType support',
@@ -116,6 +104,7 @@ $requirements = array(
         'by' => '<a href="http://www.yiiframework.com/doc-2.0/yii-captcha-captcha.html">Captcha</a>',
         'memo' => $gdMemo,
     ),
+	/*
     array(
         'name' => 'ImageMagick PHP extension with PNG support',
         'mandatory' => false,
@@ -123,6 +112,7 @@ $requirements = array(
         'by' => '<a href="http://www.yiiframework.com/doc-2.0/yii-captcha-captcha.html">Captcha</a>',
         'memo' => $imagickMemo,
     ),
+	 */
     // PHP ini :
     'phpExposePhp' => array(
         'name' => 'Expose PHP',
