@@ -22,6 +22,21 @@ return yii\helpers\ArrayHelper::merge(
 					'robots.txt' => 'site/robots',
 				],
 			],
+			'pageContentManager' => [
+				'class' => 'yii2tech\content\Manager',
+				'sourceStorage' => [
+					'class' => 'yii2tech\content\PhpStorage',
+					'filePath' => '@app/data/pages',
+				],
+				'overrideStorage' => [
+					'class' => 'yii2tech\content\DbStorage',
+					'table' => '{{%Page}}',
+					'contentAttributes' => [
+						'title',
+						'body',
+					],
+				],
+			],
 		]
-	]
+		]
 );

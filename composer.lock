@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "067372fd715310fcb0febb65f2d89f04",
+    "content-hash": "a6ca1d038d45c42d769215fb11a4b115",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -269,17 +269,69 @@
             "time": "2017-08-29T20:43:58+00:00"
         },
         {
+            "name": "yii2tech/content",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yii2tech/content.git",
+                "reference": "4d5d8bc8951d6cf65b633e1c8396b0ee25133a47"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yii2tech/content/zipball/4d5d8bc8951d6cf65b633e1c8396b0ee25133a47",
+                "reference": "4d5d8bc8951d6cf65b633e1c8396b0ee25133a47",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "suggest": {
+                "mustache/mustache": "you need this package, if you wish to use `MustacheRenderer`"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii2tech\\content\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Klimov",
+                    "email": "klimov.paul@gmail.com"
+                }
+            ],
+            "description": "Content management system for Yii2",
+            "keywords": [
+                "content",
+                "management",
+                "override",
+                "template",
+                "text",
+                "yii2"
+            ],
+            "time": "2017-08-04T11:49:28+00:00"
+        },
+        {
             "name": "yiisoft/yii2",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "7b9cc001ee115cb80c1ccdb00173cb1f1c9387dc"
+                "reference": "ba56c51dcb9e8b8cdaaea109fd4a4727457f085f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/7b9cc001ee115cb80c1ccdb00173cb1f1c9387dc",
-                "reference": "7b9cc001ee115cb80c1ccdb00173cb1f1c9387dc",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/ba56c51dcb9e8b8cdaaea109fd4a4727457f085f",
+                "reference": "ba56c51dcb9e8b8cdaaea109fd4a4727457f085f",
                 "shasum": ""
             },
             "require": {
@@ -366,7 +418,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2017-11-14T21:49:40+00:00"
+            "time": "2017-11-20T06:20:12+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -2486,12 +2538,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "0f859c42d6b557fdac74754c9823170765ae3872"
+                "reference": "72b0921e1c59928b61be8b7a7a98ae5a4f2a02e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/0f859c42d6b557fdac74754c9823170765ae3872",
-                "reference": "0f859c42d6b557fdac74754c9823170765ae3872",
+                "url": "https://api.github.com/repos/symfony/console/zipball/72b0921e1c59928b61be8b7a7a98ae5a4f2a02e1",
+                "reference": "72b0921e1c59928b61be8b7a7a98ae5a4f2a02e1",
                 "shasum": ""
             },
             "require": {
@@ -2547,7 +2599,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-11-12T16:53:54+00:00"
+            "time": "2017-11-19T18:41:20+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -2608,12 +2660,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "92697a71cd55c5852d0f19cd80e7fb6d1eb12b88"
+                "reference": "a5069bdba7fa9bafb499fc3b16496a65df91173a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/92697a71cd55c5852d0f19cd80e7fb6d1eb12b88",
-                "reference": "92697a71cd55c5852d0f19cd80e7fb6d1eb12b88",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/a5069bdba7fa9bafb499fc3b16496a65df91173a",
+                "reference": "a5069bdba7fa9bafb499fc3b16496a65df91173a",
                 "shasum": ""
             },
             "require": {
@@ -2656,7 +2708,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-11-12T16:47:31+00:00"
+            "time": "2017-11-19T20:10:49+00:00"
         },
         {
             "name": "symfony/dom-crawler",
@@ -3183,7 +3235,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "yii2tech/content": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
