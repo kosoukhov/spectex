@@ -11,7 +11,7 @@ class m171120_145136_create_page_table extends Migration {
 	 * @inheritdoc
 	 */
 	public function safeUp() {
-		$tableName = 'Page';
+		$tableName = 'page';
 		$columns = [
 			'id' => $this->string(),
 			'title' => $this->string(),
@@ -25,7 +25,7 @@ class m171120_145136_create_page_table extends Migration {
 	 * @inheritdoc
 	 */
 	public function safeDown() {
-		$this->dropTable('Page');
+		$this->dropTable('page');
 	}
 
 }

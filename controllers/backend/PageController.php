@@ -24,8 +24,13 @@ class PageController extends Controller {
 				'class' => AccessControl::className(),
 				'rules' => [
 					[
-						'actions' => ['index', 'view', 'create', 'update'],
+						'actions' => ['index', 'view', 'update', 'switch', 'image-upload'],
 						'allow' => true,
+						'roles' => ['@'],
+					],
+					[
+						'actions' => ['create', 'delete'],
+						'allow' => false,
 						'roles' => ['@'],
 					],
 				],
@@ -35,6 +40,16 @@ class PageController extends Controller {
 				'actions' => [
 					'delete' => ['POST'],
 				],
+			],
+		];
+	}
+
+	public function actions() {
+		return [
+			'image-upload' => [
+				'class' => 'vova07\imperavi\actions\UploadAction',
+				'url' => Yii::$app->params['siteUrl'] . 'images/', // Directory URL address, where files are stored.
+				'path' => '@app/web/images' // Or absolute path to directory where files are stored.
 			],
 		];
 	}
@@ -79,6 +94,29 @@ class PageController extends Controller {
 		return $this->render('create', [
 				'model' => $model,
 		]);
+	}
+
+	/**
+	 * Switching data for the model between the file and the database and back.
+	 * the browser will be redirected to the 'index' page.
+	 * @param string $id
+	 * @return mixed
+	 */
+	public function actionSwitch($id) {
+		$model = $this->findModel($id);
+
+		$modId = $model->id;
+		$swithText = Yii::$app->params['pageSwithText'];
+
+		if (stristr($modId, $swithText)) {
+			$model->id = rtrim($modId, $swithText);
+		} else {
+			$model->id = $modId . $swithText;
+		}
+
+		$model->save();
+
+		return $this->redirect(['index']);
 	}
 
 	/**

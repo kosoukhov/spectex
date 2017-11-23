@@ -9,10 +9,10 @@ namespace app\models;
  */
 class PageQuery extends \yii\db\ActiveQuery
 {
-    /*public function active()
+    public function noIndex()
     {
-        return $this->andWhere('[[status]]=1');
-    }*/
+        return $this->andWhere('[[id]] NOT LIKE "index%"');
+    }
 
     /**
      * @inheritdoc

@@ -3,17 +3,18 @@
 namespace app\controllers\frontend;
 
 use Yii;
-use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\Response;
+use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
-use yii\data\ActiveDataProvider;
-use app\models\LoginForm;
-use app\models\ContactForm;
+use yii\helpers\Url;
+use yii\helpers\ArrayHelper;
 use app\models\Page;
 
 
 class SiteController extends Controller {
+
+	private $_menuItems;
 
 	/**
 	 * @inheritdoc
@@ -55,75 +56,40 @@ class SiteController extends Controller {
 		];
 	}
 
-	/**
-	 * Displays homepage.
-	 *
-	 * @return string
-	 */
-	public function actionIndex() {
-		$pagesProvider = new ActiveDataProvider([
-			'pagination' => false,
-			'query' => Page::find()]);
+	public function beforeAction($action) {
+		if (!parent::beforeAction($action)) {
+			return false;
+		}
 
-		return $this->render('index', ['pagesProvider' => $pagesProvider]);
+		$this->_menuItems = $this->_getMenuItems();
+
+		return true;
 	}
 
-	/**
-	 * Login action.
-	 *
-	 * @return Response|string
-	 */
-	public function actionLogin() {
-		if (!Yii::$app->user->isGuest) {
-			return $this->goHome();
-		}
-
-		$model = new LoginForm();
-		if ($model->load(Yii::$app->request->post()) && $model->login()) {
-			return $this->goBack();
-		}
-
-		$model->password = '';
-		return $this->render('login', [
-				'model' => $model,
+	private function _getMenuItems() {
+		return ArrayHelper::toArray(Page::find()->noIndex()->all(), [
+				'app\models\Page' => [
+					'label' => 'title',
+					'url' => Url::to('id')
+				],
 		]);
 	}
 
 	/**
-	 * Logout action.
-	 *
-	 * @return Response
-	 */
-	public function actionLogout() {
-		Yii::$app->user->logout();
-
-		return $this->goHome();
-	}
-
-	/**
-	 * Displays contact page.
-	 *
-	 * @return Response|string
-	 */
-	public function actionContact() {
-		$model = new ContactForm();
-		if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
-			Yii::$app->session->setFlash('contactFormSubmitted');
-
-			return $this->refresh();
-		}
-		return $this->render('contact', [
-				'model' => $model,
-		]);
-	}
-
-	/**
-	 * Displays about page.
+	 * Displays static pages.
 	 *
 	 * @return string
 	 */
-	public function actionAbout() {
-		return $this->render('about');
+	public function actionLoad($page) {
+		$renderPage = 'page';
+
+		if (in_array($page, ['index', 'contacts'])) {
+			$renderPage = $page;
+		}
+
+		$this->view->params['menuItems'] = $this->_menuItems;
+
+		return $this->render($renderPage);
 	}
 
 }

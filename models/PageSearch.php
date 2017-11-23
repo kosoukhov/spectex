@@ -18,7 +18,7 @@ class PageSearch extends Page
     public function rules()
     {
         return [
-            [['id', 'title', 'body'], 'safe'],
+            [['id', 'title', 'body', 'tag'], 'safe'],
         ];
     }
 
@@ -59,6 +59,7 @@ class PageSearch extends Page
         // grid filtering conditions
         $query->andFilterWhere(['like', 'id', $this->id])
             ->andFilterWhere(['like', 'title', $this->title])
+			->andFilterWhere(['like', 'tag', $this->tag])
             ->andFilterWhere(['like', 'body', $this->body]);
 
         return $dataProvider;

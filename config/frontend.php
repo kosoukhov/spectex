@@ -12,16 +12,6 @@ return yii\helpers\ArrayHelper::merge(
 				'identityClass' => 'app\models\User',
 				'enableAutoLogin' => true,
 			],
-			'urlManager' => [
-				'enablePrettyUrl' => true,
-				'showScriptName' => false,
-				'rules' => [
-					'/' => 'site/index',
-					'<controller:[\w-]+>' => '<controller>/index',
-					'<controller:[\w-]+>/<action:[\w-]+>/<id:\d+>' => '<controller>/<action>',
-					'robots.txt' => 'site/robots',
-				],
-			],
 			'pageContentManager' => [
 				'class' => 'yii2tech\content\Manager',
 				'sourceStorage' => [
@@ -34,7 +24,36 @@ return yii\helpers\ArrayHelper::merge(
 					'contentAttributes' => [
 						'title',
 						'body',
+						'tag',
 					],
+				],
+			],
+			'urlManager' => [
+				'enablePrettyUrl' => true,
+				'showScriptName' => false,
+				'normalizer' => [
+					'class' => 'yii\web\UrlNormalizer',
+					'collapseSlashes' => true,
+					'normalizeTrailingSlash' => true,
+				],
+				'rules' => [
+					[
+						'pattern' => '/',
+						'route' => 'site/load',
+						'defaults' => ['page' => 'index'],
+					],
+					[
+						'pattern' => '<page:[\w-]+>',
+						'route' => '/site/load',
+					],
+				
+				//'<_a:(about|contacts|captcha)>' => 'site/default/<_a>',
+				//'/<action:[\w-]+>' => '/site/<action>',
+				//'<action:[\w-]+>' => 'site/load/<action>',
+				//'site/<view:[a-zA-Z0-9-]+>' => 'site/index',
+				//'<controller:[\w-]+>' => '<controller>/index',
+				//'<controller:[\w-]+>/<action:[\w-]+>/<id:\d+>' => '<controller>/<action>',
+				//'robots.txt' => 'site/robots',
 				],
 			],
 		]

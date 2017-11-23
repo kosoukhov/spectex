@@ -18,4 +18,7 @@ return [
 			'accessToken' => '101-token',
 		]
 	],
-	'phone' => '+7номер_мобильного'];
+	'phone' => '+7номер_мобильного',
+	'pageSwithText' => '-Оригинал',
+	'siteUrl' => 'http://spec.local/',
+];

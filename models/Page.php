@@ -10,6 +10,7 @@ use Yii;
  * @property string $id
  * @property string $title
  * @property string $body
+ * @property string $tag
  */
 class Page extends \yii\db\ActiveRecord
 {
@@ -18,7 +19,7 @@ class Page extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'Page';
+        return 'page';
     }
 
     /**
@@ -28,8 +29,8 @@ class Page extends \yii\db\ActiveRecord
     {
         return [
             [['id'], 'required'],
-            [['body'], 'string'],
-            [['id', 'title'], 'string', 'max' => 255],
+            [['body', 'tag'], 'string'],
+            [['id', 'title', 'tag'], 'string', 'max' => 255],
             [['id'], 'unique'],
         ];
     }
@@ -43,6 +44,7 @@ class Page extends \yii\db\ActiveRecord
             'id' => 'Адрес',
             'title' => 'Заголовок',
             'body' => 'Текст',
+			'tag' => 'Теги',
         ];
     }
 
