@@ -1,0 +1,382 @@
+body.color-blue .color,
+body.color-blue a.color,
+body.color-blue a.color:hover,
+body.color-blue a.color:focus {
+  color: #00bffe !important;
+}
+body.color-blue svg path.color {
+  fill: #00bffe !important;
+}
+body.color-blue .divider-line {
+  border-color: #00bffe;
+}
+body.color-blue .quote:before {
+  color: #00bffe;
+}
+body.color-blue .quote-simple {
+  border-left: 4px solid #00bffe;
+}
+body.color-blue .marker-list > li:after,
+body.color-blue .marker-list-sm > li:after,
+body.color-blue .marker-list-arrow > li:after {
+  color: #00bffe;
+}
+body.color-blue ul.category-list li:after {
+  color: #00bffe;
+}
+body.color-blue .number-list > li:before {
+  color: #00bffe;
+}
+body.color-blue .contact-info > .icon {
+  color: #00bffe;
+}
+body.color-blue .loader-circle-2 {
+  border-right-color: #00bffe;
+}
+body.color-blue .loader .line:nth-child(6) {
+  background: #00bffe;
+}
+body.color-blue .loader .subline:nth-child(11) {
+  background: #00bffe;
+}
+body.color-blue .loader .needle:before {
+  border-color: transparent #00bffe transparent transparent;
+}
+body.color-blue .input-custom:hover,
+body.color-blue .input-custom:focus,
+body.color-blue .input-custom.focus {
+  border-color: #00bffe;
+}
+body.color-blue .textarea-custom:hover,
+body.color-blue .textarea-custom:focus,
+body.color-blue .textarea-custom.focus {
+  border-color: #00bffe;
+}
+body.color-blue .btn:not([data-action]):hover {
+  background: #00bffe;
+}
+body.color-blue .btn:not([data-action]):before,
+body.color-blue .btn:not([data-action]):after {
+  background-color: #00bffe;
+}
+body.color-blue .btn:not([data-action]).btn-border {
+  border: 2px solid #00bffe;
+  background: transparent;
+}
+body.color-blue .btn-invert:not([data-action]),
+body.color-blue .btn-invert:not([data-action]).active,
+body.color-blue .btn-invert:not([data-action]):active,
+body.color-blue .btn-invert:not([data-action]).focus,
+body.color-blue .btn-invert:not([data-action]):focus {
+  background: #00bffe;
+}
+body.color-blue .social-links ul li a {
+  color: #00bffe;
+}
+body.color-blue .link a {
+  color: #00bffe;
+}
+body.color-blue .tag:hover {
+  background-color: #00bffe;
+}
+body.color-blue .tags-list li a:hover {
+  background-color: #00bffe;
+}
+body.color-blue .calendar__footer a:hover {
+  color: #00bffe;
+}
+body.color-blue .calendar .selected,
+body.color-blue .calendar .selected:hover {
+  background-color: #00bffe;
+}
+body.color-blue .nav-tabs > li.active > a,
+body.color-blue .nav-tabs > li > a:hover {
+  color: #00bffe !important;
+}
+body.color-blue .nav-tabs > li > a::after {
+  background: #00bffe;
+}
+body.color-blue .tab-nav > li > a::after {
+  background: #00bffe none repeat scroll 0% 0%;
+}
+body.color-blue .nav-pills > li.active > a,
+body.color-blue .nav-pills > li.active > a:focus,
+body.color-blue .nav-pills > li.active > a:hover {
+  background: #00bffe;
+  border-color: #00bffe;
+}
+body.color-blue header .header-right .address span {
+  color: #00bffe;
+}
+body.color-blue header .header-phone .phone-number .code {
+  color: #00bffe;
+}
+body.color-blue header .header-cart:hover a.icon,
+body.color-blue header .header-cart.opened a.icon {
+  color: #00bffe;
+}
+body.color-blue header .header-cart .badge {
+  background-color: #00bffe;
+}
+body.color-blue header .header-cart:hover a.icon,
+body.color-blue header .header-cart.opened a.icon {
+  color: #00bffe;
+}
+body.color-blue .appointment {
+  background-color: #00bffe;
+}
+body.color-blue .appointment:after {
+  border-color: transparent #00bffe transparent transparent;
+}
+@media (min-width: 992px) {
+  body.color-blue .navbar-nav > li > a:after {
+    background-color: #00bffe;
+  }
+  body.color-blue .navbar-nav > li.active a,
+  body.color-blue .navbar-nav > li:hover a {
+    background-color: #00bffe;
+  }
+}
+@media (max-width: 991px) {
+  body.color-blue header.page-header .navbar-toggle {
+    color: #00bffe;
+  }
+}
+body.color-blue .search-container:hover .button {
+  background-color: #00bffe;
+}
+@media (max-width: 991px) {
+  body.color-blue .search-container .button {
+    background-color: #00bffe;
+  }
+}
+@media (max-width: 991px) {
+  body.color-blue #slide-nav #slidemenu .close-menu {
+    color: #00bffe;
+  }
+}
+body.color-blue .page-footer .social-links ul li a {
+  color: #00bffe;
+}
+body.color-blue .page-footer .footer-phone .number {
+  color: #00bffe;
+}
+body.color-blue .page-footer .contact-info .icon {
+  color: #00bffe;
+}
+body.color-blue #mainSlider .slide-content h3 {
+  color: #00bffe;
+}
+body.color-blue #mainSlider .slide-content .btn:hover,
+body.color-blue #mainSlider .slide-content .btn.active,
+body.color-blue #mainSlider .slide-content .btn:active,
+body.color-blue #mainSlider .slide-content .btn.focus,
+body.color-blue #mainSlider .slide-content .btn:focus {
+  color: #00bffe;
+}
+body.color-blue #mainSlider .slick-prev:hover:before,
+body.color-blue #mainSlider .slick-next:hover:before {
+  color: #00bffe;
+}
+body.color-blue .breadcrumbs .breadcrumb a:hover {
+  color: #00bffe;
+}
+body.color-blue .text-icon .icon-wrapper > span {
+  background: #00bffe;
+}
+body.color-blue .text-icon-hor .icon-wrapper span i.icon {
+  color: #00bffe;
+}
+body.color-blue .text-icon-hor .icon-wrapper .icon-hover {
+  background-color: #00bffe;
+}
+body.color-blue .text-icon-hor .price {
+  color: #00bffe;
+}
+body.color-blue .testimonials-item {
+  background-color: #00bffe;
+}
+body.color-blue .testimonials-item .inside .rating {
+  color: #00bffe;
+}
+body.color-blue .testimonials-single .username {
+  color: #00bffe;
+}
+body.color-blue .faq-item .panel-heading .panel-title {
+  border-top: 1px solid #00bffe;
+}
+body.color-blue .faq-item .panel-heading .panel-title > a:hover {
+  color: #00bffe;
+}
+body.color-blue .faq-item .panel-heading a > span.caret-toggle {
+  background-color: #00bffe;
+}
+body.color-blue .blog-post .post-image .post-link:hover {
+  color: #00bffe;
+}
+body.color-blue .blog-post .post-meta li i.icon {
+  color: #00bffe;
+}
+body.color-blue .post-preview .post-title a:hover {
+  color: #00bffe;
+}
+body.color-blue .side-block {
+  border-bottom: 1px solid #00bffe;
+}
+body.color-blue .comments .comment .text .meta a {
+  color: #00bffe;
+}
+body.color-blue .comments .comment .text .date i.icon {
+  color: #00bffe;
+}
+body.color-blue #appointmentForm.modal .modal-dialog .modal-header .close {
+  color: #00bffe;
+}
+body.color-blue .services-block .image,
+body.color-blue .services-block-alt .image i {
+  background-color: #00bffe;
+  -webkit-box-shadow: 0 0 0 20px #00bffe;
+  -moz-box-shadow: 0 0 0 20px #00bffe;
+  box-shadow: 0 0 0 20px #00bffe;
+}
+body.color-blue .services-block-alt .image:hover i {
+  -webkit-box-shadow: 0 0 0 0 #00bffe;
+  -moz-box-shadow: 0 0 0 0 #00bffe;
+  box-shadow: 0 0 0 0 #00bffe;
+}
+body.color-blue .services-block .service.dark h2,
+body.color-blue .services-block .service.dark h3,
+body.color-blue .services-block .service.dark h4 {
+  color: #00bffe;
+}
+body.color-blue .services-block-alt .caption .title {
+  color: #00bffe;
+}
+body.color-blue .services-block-alt .services-link {
+  color: #00bffe;
+}
+body.color-blue .vertical-tab-menu .list-group > a i.icon {
+  color: #00bffe;
+}
+body.color-blue .promo-banner {
+  border: 2px dotted #00bffe;
+}
+body.color-blue .promo-banner .icon-lg {
+  color: #00bffe;
+}
+body.color-blue .how-works-block .caption > .inside .number span {
+  background-color: #00bffe;
+}
+body.color-blue .stat-box .icon {
+  color: #00bffe;
+}
+body.color-blue .filters-by-category ul li a:hover,
+body.color-blue .filters-by-category ul li a.selected {
+  color: #00bffe;
+}
+@media (min-width: 768px) {
+  body.color-blue .image-scale-color:after {
+    background: #00bffe;
+  }
+}
+body.color-blue .slick-prev:hover:before,
+body.color-blue .slick-next:hover:before {
+  color: #00bffe;
+}
+body.color-blue .slick-dots li.slick-active button,
+body.color-blue .slick-dots li.slick-active button:hover {
+  background: #00bffe;
+}
+body.color-blue .coupon-text5 {
+  color: #00bffe;
+}
+body.color-blue .coupon .coupon-all {
+  background-color: #00bffe;
+}
+body.color-blue .coupon .coupon-all:after {
+  border-color: #00bffe transparent transparent transparent;
+}
+body.color-blue .coupon-print-inside {
+  border-color: #00bffe;
+}
+body.color-blue .service-icon .icon-wrapper span {
+  background: #00bffe;
+}
+body.color-blue .text-icon-sm .icon-wrapper > span {
+  background: #00bffe;
+}
+body.color-blue .text-icon-sm .icon-wrapper .icon-hover {
+  background-color: #00bffe;
+}
+body.color-blue .table .cell-marker {
+  background: #00bffe;
+  border-color: #00bffe;
+}
+body.color-blue .pagination > li > a:hover,
+body.color-blue .pagination > li > span:hover {
+  background-color: #00bffe;
+  border-color: #00bffe;
+}
+body.color-blue .pagination > .active > a,
+body.color-blue .pagination > .active > span,
+body.color-blue .pagination > .active > a:hover,
+body.color-blue .pagination > .active > span:hover {
+  background-color: #00bffe;
+  border-color: #00bffe;
+}
+body.color-blue .testimonial-card:after {
+  color: #00bffe;
+}
+body.color-blue .column-filters {
+  margin-bottom: 35px;
+}
+body.color-blue .column-filters-inside {
+  border: 3px solid #f5f5f5;
+}
+body.color-blue .column-filters .side-block {
+  border-color: #ebebeb;
+  padding: 20px;
+  margin-bottom: 0;
+}
+body.color-blue .column-filters .side-block h3 {
+  margin-bottom: 25px;
+}
+body.color-blue .column-filters .category-list {
+  margin-top: 20px;
+}
+body.color-blue .column-center {
+  margin-bottom: 35px;
+}
+body.color-blue .noUi-horizontal .noUi-handle {
+  background: #00bffe;
+}
+body.color-blue .noUi-connect {
+  background: #00bffe;
+}
+body.color-blue .simple-pagination a.active {
+  color: #00bffe;
+}
+body.color-blue .nav-tabs > li.active > a,
+body.color-blue .nav-tabs > li > a:hover {
+  color: #00bffe !important;
+}
+body.color-blue .nav-tabs > li > a::after {
+  background: #00bffe;
+}
+body.color-blue .tab-nav > li > a::after {
+  background: #00bffe none repeat scroll 0% 0%;
+}
+body.color-blue .rating i {
+  color: #00bffe;
+}
+body.color-blue .back-to-top a {
+	background: #00bffe;
+}
+@media (max-width: 991px){
+	body.color-blue .header-info-mobile {
+		background-color: #eee;
+	}
+	body.color-blue .header-info-toggle [class*='icon-']:hover {
+		color: #00bffe;
+	}
+}
