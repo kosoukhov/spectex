@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * JS & CSS for frontend
+ */
+
+namespace app\assets;
+
+use yii\web\AssetBundle;
+use yii\web\View;
+
+class FrontAsset extends AssetBundle {
+
+	public $sourcePath = '@app/views/frontend/';
+	
+	public $css = [
+		'css/animate.min.css',
+		'css/slick.css',
+		'css/inline_css.css',
+		'css/custom.css',
+		'css/color-blue.css',
+		'css/style.css',
+	];
+	public $js = [
+		'js/slick.js',
+		'js/moment.js',
+		'js/custom.js',
+	];
+	public $depends = [
+		'app\assets\AppAsset',
+	];
+	public $jsOptions = [
+		'position' => View::POS_HEAD
+	];
+
+}
