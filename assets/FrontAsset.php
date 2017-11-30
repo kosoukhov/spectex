@@ -14,12 +14,14 @@ class FrontAsset extends AssetBundle {
 	public $sourcePath = '@app/views/frontend/';
 	
 	public $css = [
-		'css/animate.min.css',
-		'css/slick.css',
-		'css/inline_css.css',
-		'css/custom.css',
-		'css/color-blue.css',
-		'css/style.css',
+//		'css/animate.min.css',
+//		'css/slick.css',
+//		'css/inline_css.css',
+//		'css/custom.css',
+//		'css/color-blue.css',
+//		'css/style.css',
+/*Create by purifycss */
+		YII_ENV_DEV ? 'css/front.css' : 'css/front.min.css',
 	];
 	public $js = [
 		'js/slick.js',

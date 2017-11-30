@@ -11,7 +11,6 @@ use yii\helpers\Url;
 use yii\helpers\ArrayHelper;
 use app\models\Page;
 
-
 class SiteController extends Controller {
 
 	private $_menuItems;
@@ -67,12 +66,20 @@ class SiteController extends Controller {
 	}
 
 	private function _getMenuItems() {
-		return ArrayHelper::toArray(Page::find()->noIndex()->all(), [
+		$menuItems = ArrayHelper::toArray(Page::find()->noIndex()->orderBy(['position' => SORT_ASC])->all(), [
 				'app\models\Page' => [
 					'label' => 'title',
-					'url' => Url::to('id')
+					'url' => [Url::to('id')],
 				],
 		]);
+		
+		foreach ($menuItems as $k => $v){
+			if($v['url'] == Yii::$app->getRequest()->getQueryParam('page')){
+				$menuItems[$k]['active'] = true;
+			}
+		}
+
+		return $menuItems;
 	}
 
 	/**

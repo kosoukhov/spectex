@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'auto';
-  src:  url('fonts/auto.eot?fxjn22');
+/*  src:  url('fonts/auto.eot?fxjn22');
   src:  url('fonts/auto.eot?fxjn22#iefix') format('embedded-opentype'),
     url('fonts/auto.ttf?fxjn22') format('truetype'),
     url('fonts/auto.woff?fxjn22') format('woff'),
-    url('fonts/auto.svg?fxjn22#auto') format('svg');
+    url('fonts/auto.svg?fxjn22#auto') format('svg');*/
   font-weight: normal;
   font-style: normal;
 }
@@ -25,155 +25,155 @@
 }
 
 .icon-phone:before {
-  content: "\e931";
+  content: "-";
 }
 .icon-email:before {
-  content: "\e932";
+  content: "-";
 }
 .icon-arrowhead-pointing-to-the-right:before {
-  content: "\e929";
+  content: "-";
 }
 .icon-exhaust-pipe:before {
-  content: "\e92c";
+  content: "-";
 }
 .icon-engine:before {
-  content: "\e92d";
+  content: "-";
 }
 .icon-gearshift:before {
-  content: "\e92e";
+  content: "-";
 }
 .icon-shop-cart:before {
-  content: "\e92f";
+  content: "-";
 }
 .icon-star:before {
-  content: "\e900";
+  content: "-";
 }
 .icon-calendar:before {
-  content: "\e901";
+  content: "-";
 }
 .icon-calendar-page:before {
-  content: "\e902";
+  content: "-";
 }
 .icon-oil:before {
-  content: "\e903";
+  content: "-";
 }
 .icon-balance:before {
-  content: "\e904";
+  content: "-";
 }
 .icon-power:before {
-  content: "\e905";
+  content: "-";
 }
 .icon-car-wheel:before {
-  content: "\e906";
+  content: "-";
 }
 .icon-disc-brake:before {
-  content: "\e907";
+  content: "-";
 }
 .icon-check:before {
-  content: "\e908";
+  content: "-";
 }
 .icon-close-cross:before {
-  content: "\e909";
+  content: "-";
 }
 .icon-clock:before {
-  content: "\e90a";
+  content: "-";
 }
 .icon-locate:before {
-  content: "\e90b";
+  content: "-";
 }
 .icon-favorite:before {
-  content: "\e90c";
+  content: "-";
 }
 .icon-interface:before {
-  content: "\e90d";
+  content: "-";
 }
 .icon-lines-menu:before {
-  content: "\e90e";
+  content: "-";
 }
 .icon-search:before {
-  content: "\e90f";
+  content: "-";
 }
 .icon-rocket:before {
-  content: "\e910";
+  content: "-";
 }
 .icon-people-1:before {
-  content: "\e911";
+  content: "-";
 }
 .icon-people:before {
-  content: "\e912";
+  content: "-";
 }
 .icon-transport:before {
-  content: "\e913";
+  content: "-";
 }
 .icon-people-2:before {
-  content: "\e914";
+  content: "-";
 }
 .icon-people-3:before {
-  content: "\e915";
+  content: "-";
 }
 .icon-settings:before {
-  content: "\e916";
+  content: "-";
 }
 .icon-shape:before {
-  content: "\e917";
+  content: "-";
 }
 .icon-squares:before {
-  content: "\e918";
+  content: "-";
 }
 .icon-technology:before {
-  content: "\e919";
+  content: "-";
 }
 .icon-tool:before {
-  content: "\e91a";
+  content: "-";
 }
 .icon-diploma:before {
-  content: "\e91b";
+  content: "-";
 }
 .icon-transport-1:before {
-  content: "\e91c";
+  content: "-";
 }
 .icon-mark:before {
-  content: "\e91d";
+  content: "-";
 }
 .icon-web-settings:before {
-  content: "\e91e";
+  content: "-";
 }
 .icon-arrow-left:before {
-  content: "\e91f";
+  content: "-";
 }
 .icon-arrow-right:before {
-  content: "\e920";
+  content: "-";
 }
 .icon-arrows-2:before {
-  content: "\e921";
+  content: "-";
 }
 .icon-behance-logo:before {
-  content: "\e922";
+  content: "-";
 }
 .icon-facebook-logo:before {
-  content: "\e923";
+  content: "-";
 }
 .icon-google-plus-logo:before {
-  content: "\e924";
+  content: "-";
 }
 .icon-instagram-logo:before {
-  content: "\e925";
+  content: "-";
 }
 .icon-linkedin-logo:before {
-  content: "\e926";
+  content: "-";
 }
 .icon-tumblr-logo:before {
-  content: "\e927";
+  content: "-";
 }
 .icon-twitter-logo:before {
-  content: "\e928";
+  content: "-";
 }
 .icon-close:before {
-  content: "\e930";
+  content: "-";
 }
 .icon-arrow_up:before {
-  content: "\e92a";
+  content: "-";
 }
 .icon-arrow_down:before {
-  content: "\e92b";
+  content: "-";
 }

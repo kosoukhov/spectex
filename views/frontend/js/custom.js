@@ -16,7 +16,7 @@
 			textIconCarousel: $('.text-icon-carousel'),
 			personCarousel: $('.person-carousel'),
 			submenu: $('[data-submenu]'),
-			googleMapFooter: $('#footer-map'),
+			//googleMapFooter: $('#footer-map'),
 			counterBlock: $('#counterBlock'),
 			isotopeGallery: $('.gallery-isotope'),
 			postGallery: $('.blog-isotope'),
@@ -742,10 +742,11 @@
 				equalHeight(".services-block-alt", ".title", ".text");
 			}
 		}
+        /*
 		if (plugins.googleMapFooter.length) {
 			createMap('footer-map', 14, 37.36274700000004, -122.03525250000001)
 		}
-
+        */
 	});
 
 

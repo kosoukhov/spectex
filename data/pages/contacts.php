@@ -1,7 +1,7 @@
 <?php
 // file '@app/data/pages/contacts.php'
 return [
-    'title' => 'contacts title',
-    'body' => 'contacts body',
-	'tag' => 'contacts tag',
+    'title' => 'Контакты',
+    'body' => '<p>Московская обл., городской округ Домодедово, Ям с., ул. Почтовая</p><p><strong>Телефоны:</strong></p><p>+7 (903) 500-88-58<br>+7 (985) 226-26-54</p><p><strong>Часы работы:</strong><br>Понедельник - Воскресенье, с 09:00 до 19:00</p>',
+	'tag' => 'Автосервис VAG телефон',
 ];

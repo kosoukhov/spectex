@@ -15,6 +15,6 @@
 					<div class="loader-circle-2"></div>
 				</div>
 				<div class="needle"></div>
-				<div class="loading">Loading</div>
+				<div class="loading">Загрузка...</div>
 			</div>
 		</div>

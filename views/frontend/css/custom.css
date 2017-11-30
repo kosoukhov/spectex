@@ -337,7 +337,7 @@ h6 {
   left: 0;
   display: block;
   font-family: 'auto';
-  content: "\e91d";
+  content: "-";
   font-size: 15px;
   color: #fede00;
 }
@@ -372,7 +372,7 @@ h6 {
   left: 0;
   display: block;
   font-family: 'auto';
-  content: "\e91d";
+  content: "-";
   font-size: 15px;
   color: #fede00;
 }
@@ -400,7 +400,7 @@ h6 {
   left: 0;
   display: block;
   font-family: 'auto';
-  content: "\e920";
+  content: "-";
   font-size: 8px;
   color: #fede00;
 }
@@ -1669,7 +1669,7 @@ html {
 .block.bg-1,
 .block.bg-2,
 .block.bg-3 {
-  background: url(../tpl_img/block-bg-1.jpg) no-repeat fixed center center;
+  background: url(/tpl_img/block-bg-1.jpg) no-repeat fixed center center;
   background-size: cover;
   padding: 75px 0 60px;
 }
@@ -1713,7 +1713,7 @@ html {
   background: #2c2c2c;
 }
 .block.bg-2 {
-  background: url(../tpl_img/block-bg-2.jpg) no-repeat fixed 0 0;
+  background: url(/tpl_img/block-bg-2.jpg) no-repeat fixed 0 0;
   padding: 75px 0 60px;
 }
 @media (max-width: 991px) {
@@ -1755,10 +1755,10 @@ body.is-ios .block.bg-3 {
   color: #fff;
 }
 .block.bg-dark.full-block {
-  background: url(../tpl_img/grey-bg-1.png) repeat 0 0;
+  background: url(/tpl_img/grey-bg-1.png) repeat 0 0;
 }
 .block.bg-dark:not(.full-block) .container {
-  background: url(../tpl_img/grey-bg-1.png) repeat 0 0;
+  background: url(/tpl_img/grey-bg-1.png) repeat 0 0;
 }
 .block.offset-sm {
   margin-top: -35px;
@@ -1783,7 +1783,7 @@ body.is-ios .block.bg-3 {
   }
 }
 body:not(.home) {
-  background: url(../tpl_img/header-photo-bg.jpg) repeat-y center 0;
+  background: url(/tpl_img/header-photo-bg.jpg) repeat-y center 0;
   background-size: 100%;
 }
 body:not(.home) #pageContent {
@@ -1824,7 +1824,7 @@ body:not(.home) #pageContent {
 }
 @media (max-width: 991px) {
   #pageTitle {
-    background: url(../tpl_img/header-photo-bg.jpg) repeat 0;
+    background: url(/tpl_img/header-photo-bg.jpg) repeat 0;
     background-size: cover;
   }
 }
@@ -1875,7 +1875,7 @@ header.page-header:before {
   left: 0;
 }
 header .header-row {
-  background: url(../tpl_img/grey-bg.png) repeat;
+  background: url(/tpl_img/grey-bg.png) repeat;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -2294,7 +2294,7 @@ header .logo svg {
   }
   .navbar-nav .dropdown-menu li > a:not(:only-child):after {
     font-family: 'auto';
-    content: "\e920";
+    content: "-";
     position: absolute;
     font-size: 11px;
     top: 50%;
@@ -4726,7 +4726,7 @@ h2 + .testimonials {
   position: relative;
 }
 .datetimepicker-wrap:before {
-  content: "\e901";
+  content: "-";
   font-family: 'auto';
   position: absolute;
   display: block;
@@ -4740,7 +4740,7 @@ h2 + .testimonials {
   position: relative;
 }
 .timepicker-wrap:before {
-  content: "\e90a";
+  content: "-";
   font-family: 'auto';
   position: absolute;
   display: block;
@@ -4811,7 +4811,7 @@ h2 + .testimonials {
 }
 /*-----  3.10 Banner Under Slider--------*/
 .banner-under-slider {
-  background: url(../tpl_img/banner-bg.png);
+  background: url(/tpl_img/banner-bg.png);
   color: #fff;
   padding: 50px 0 47px;
   margin-bottom: 110px;
@@ -5188,7 +5188,7 @@ h2 + .testimonials {
 }
 /*-----  3.12 GetForm            --------*/
 .vertical-tab-container {
-  background: url(../tpl_img/tabform-bg.jpg) no-repeat;
+  background: url(/tpl_img/tabform-bg.jpg) no-repeat;
   background-size: cover;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
@@ -5563,7 +5563,7 @@ div.vertical-tab div.vertical-tab-content:not(.active) {
 }
 /*-----  3.13 Promo Banner       --------*/
 .coupon {
-  background: url(../tpl_img/coupon-bg.jpg);
+  background: url(/tpl_img/coupon-bg.jpg);
   background-size: 100% 190px;
   width: 100%;
   height: 190px;
@@ -5821,7 +5821,7 @@ div.vertical-tab div.vertical-tab-content:not(.active) {
   bottom: 0;
   left: 0;
   height: 1px;
-  background: url(../tpl_img/border-hor.png) repeat-x 0 0;
+  background: url(/tpl_img/border-hor.png) repeat-x 0 0;
 }
 .coupon-print img {
   margin: 0 -28px;
@@ -5892,7 +5892,7 @@ div.vertical-tab div.vertical-tab-content:not(.active) {
   font-size: 30px;
 }
 .coupon-print-inside {
-  background: url(../tpl_img/coupon-bg.png) no-repeat right top;
+  background: url(/tpl_img/coupon-bg.png) no-repeat right top;
   border: 1px solid #fede00;
   position: relative;
   padding: 20px;
@@ -5904,7 +5904,7 @@ div.vertical-tab div.vertical-tab-content:not(.active) {
   width: 1px;
   top: -7px;
   bottom: -7px;
-  background: url(../tpl_img/border-vert.png) repeat-y 0 0;
+  background: url(/tpl_img/border-vert.png) repeat-y 0 0;
 }
 .coupon-print-inside:after {
   right: -8px;
@@ -6931,13 +6931,13 @@ h5 > .rating {
   left: -20px;
 }
 .slick-prev:before {
-  content: "\e91f";
+  content: "-";
 }
 .slick-next {
   right: -20px;
 }
 .slick-next:before {
-  content: "\e920";
+  content: "-";
 }
 /* dots */
 .slick-slider {
