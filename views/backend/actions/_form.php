@@ -15,26 +15,6 @@ use vova07\imperavi\Widget;
 
 	<?php $form = ActiveForm::begin(); ?>
 
-	<?php
-	if (!$model->date_from){
-		$model->date_from = date('Y-m-d');
-	}
-
-	echo $form->field($model, 'date_from')->widget(DatePicker::classname(), [
-		'language' => 'ru',
-		'dateFormat' => 'yyyy-MM-dd',
-	]);
-		
-	if (!$model->date_to){
-		$model->date_to = date('Y-m-d');
-	}
-
-	echo $form->field($model, 'date_to')->widget(DatePicker::classname(), [
-		'language' => 'ru',
-		'dateFormat' => 'yyyy-MM-dd',
-	]);
-	?>
-
 	<?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
 	<?php
@@ -48,6 +28,28 @@ use vova07\imperavi\Widget;
 			],
 			'imageUpload' => Url::to(['/actions/image-upload'])
 		]
+	]);
+	?>
+	
+	<?php
+	if (!$model->date_from){
+		$model->date_from = date('Y-m-d');
+	}
+
+	echo $form->field($model, 'date_from')->widget(DatePicker::classname(), [
+		'language' => 'ru',
+		'dateFormat' => 'yyyy-MM-dd',
+		'options' => ['class' => 'form-control'],
+	]);
+		
+	if (!$model->date_to){
+		$model->date_to = date('Y-m-d');
+	}
+
+	echo $form->field($model, 'date_to')->widget(DatePicker::classname(), [
+		'language' => 'ru',
+		'dateFormat' => 'yyyy-MM-dd',
+		'options' => ['class' => 'form-control'],
 	]);
 	?>
 

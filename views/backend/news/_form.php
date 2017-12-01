@@ -15,16 +15,6 @@ use vova07\imperavi\Widget;
 
 	<?php $form = ActiveForm::begin(); ?>
 
-	<?php
-	if (!$model->date)
-		$model->date = date('Y-m-d');
-
-	echo $form->field($model, 'date')->widget(DatePicker::classname(), [
-		'language' => 'ru',
-		'dateFormat' => 'yyyy-MM-dd',
-	])
-	?>
-
 	<?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
 	<?php
@@ -39,6 +29,17 @@ use vova07\imperavi\Widget;
 			'imageUpload' => Url::to(['/news/image-upload'])
 		]
 	]);
+	?>
+	
+	<?php
+	if (!$model->date)
+		$model->date = date('Y-m-d');
+
+	echo $form->field($model, 'date')->widget(DatePicker::classname(), [
+		'language' => 'ru',
+		'dateFormat' => 'yyyy-MM-dd',
+		'options' => ['class' => 'form-control'],
+	])
 	?>
 
     <div class="form-group">
