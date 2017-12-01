@@ -61,13 +61,11 @@ $frontAsset = FrontAsset::register($this);
 						<div class="header-right">
 							<button type="button" class="navbar-toggle"><i class="icon icon-lines-menu"></i></button>
 							<div class="header-right-top">
-								<div class="address">
-									Понедельник-Воскресенье <span class="custom-color">09:00 - 19:00</span>
-								</div>
+								<div class="address">Часы работы: <span class="custom-color">09:00 - 19:00</span></div>
 								<span class="appointment">Автосервис VAG</span>
 							</div>
 							<div class="header-right-bottom">
-								<div class="header-phone"><span class="text">Телефон для записи на ремонт</span><span class="phone-number">+7<span class="code"> 985 </span>226-26-54</span>
+								<div class="header-phone"><span class="text">Телефон для записи:</span><span class="phone-number">+7<span class="code"> 985 </span>226-26-54</span>
 								</div>
 							</div>
 						</div>
