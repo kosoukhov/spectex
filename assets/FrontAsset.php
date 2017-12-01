@@ -17,12 +17,16 @@ class FrontAsset extends AssetBundle {
 		'css/animate.min.css',
 		'css/slick.css',
 /*Enable for debug*/
-//		'css/inline_css.css',
-//		'css/custom.css',
-//		'css/color-blue.css',
-//		'css/style.css',
-/*Create by purifycss */
-		YII_ENV_DEV ? 'css/front.css' : 'css/front.min.css',
+//		'css/inline_css_pf.css',
+//		'css/custom_pf.css',
+//		'css/color-blue_pf.css',
+//		'css/style_pf.css',
+/**
+ * Create by purifycss 
+ * purifycss .\domains\yii2_basic_yii2tech_content\views\frontend\css\*_pf.css index.html -m -i -o front.min.css
+ * purifycss .\domains\yii2_basic_yii2tech_content\views\frontend\css\*_pf.css index.html -i -o front.css
+ */
+		YII_ENV_DEV ? 'css/front.min.css' : 'css/front.min.css',
 	];
 	public $js = [
 		'js/slick.js',
