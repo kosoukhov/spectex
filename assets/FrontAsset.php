@@ -14,8 +14,9 @@ class FrontAsset extends AssetBundle {
 	public $sourcePath = '@app/views/frontend/';
 	
 	public $css = [
-//		'css/animate.min.css',
-//		'css/slick.css',
+		'css/animate.min.css',
+		'css/slick.css',
+/*Enable for debug*/
 //		'css/inline_css.css',
 //		'css/custom.css',
 //		'css/color-blue.css',
