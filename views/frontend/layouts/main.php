@@ -75,9 +75,57 @@ $frontAsset = FrontAsset::register($this);
 							<div class="col-md-12">
 								<div class="close-menu"><i class="icon-close-cross"></i></div>
 								<?php
+								$menuItems = 
+								[
+									[
+										'label' => '<span>Главная</span>', 
+										'url' => ['/index'], 
+										'active'=> Yii::$app->request->getQueryParam('page') == 'index'
+									],
+									[
+										'label' => '<span>Дилерская диагностика</span>', 
+										'url' => ['/diag'],
+										'active'=> Yii::$app->request->getQueryParam('page') == 'diag'
+									],
+									[
+										'label' => '<span>Техобслуживание</span>', 
+										'url' => ['/techobslug'],
+										'active'=> Yii::$app->request->getQueryParam('page') == 'techobslug'
+									],
+									[
+										'label' => '<span>Услуги</span>', 
+										'url' => ['/#'],
+										'active'=> in_array(Yii::$app->request->getQueryParam('page'), ['zamena', 'tire', 'camber', 'conditioner', 'heater']),
+										'items' => [
+											['label' => 'Замена сцепления DSG', 'url'  => ['/zamena']],
+											['label' => 'Шиномонтаж', 'url'  => ['/tire']],
+											['label' => 'Сход-развал', 'url'  => ['/camber']],
+											['label' => 'Заправка и ремонт кондиционера', 'url'  => ['/conditioner']],
+											['label' => 'Отопители EBERSPACHER и WEBASTO', 'url'  => ['/heater']],
+										],
+									],
+									[
+										'label' => '<span>Новости</span>', 
+										'url' => ['/news'], 
+										'active'=>Yii::$app->controller->id == 'news'
+									],
+									[
+										'label' => '<span>Акции</span>', 
+										'url' => ['/actions'], 
+										'active'=>Yii::$app->controller->id == 'actions'
+									],
+									[
+										'label' => '<span>Контакты</span>', 
+										'url' => ['/contacts'],
+										'active'=> Yii::$app->request->getQueryParam('page') == 'contacts'
+									],
+								];
+
 								echo Nav::widget([
 									'options' => ['class' => 'navbar-nav'],
-									'items' => $this->params['menuItems']
+									'items' => $menuItems,
+									'encodeLabels' => false,
+									'activateParents' => true,
 								]);
 								?>
 							</div>
