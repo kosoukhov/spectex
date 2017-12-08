@@ -8,7 +8,8 @@ use Yii;
  * This is the model class for table "actions".
  *
  * @property int $id
- * @property string $date
+ * @property string $date_from
+ * @property string $date_to
  * @property string $title
  * @property string $content
  * @property int $deleted

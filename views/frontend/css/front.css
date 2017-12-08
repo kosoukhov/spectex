@@ -6,6 +6,10 @@ body.color-blue svg path.color {
   fill: #00bffe !important;
 }
 
+body.color-blue .divider-line {
+  border-color: #00bffe;
+}
+
 body.color-blue .marker-list > li:after,body.color-blue .marker-list-sm > li:after,body.color-blue .marker-list-arrow > li:after {
   color: #00bffe;
 }
@@ -122,6 +126,14 @@ body.color-blue .text-icon .icon-wrapper > span {
   background: #00bffe;
 }
 
+body.color-blue .blog-post .post-image .post-link:hover {
+  color: #00bffe;
+}
+
+body.color-blue .blog-post .post-meta li i.icon {
+  color: #00bffe;
+}
+
 body.color-blue .services-block .image,body.color-blue .services-block-alt .image i {
   background-color: #00bffe;
   -webkit-box-shadow: 0 0 0 20px #00bffe;
@@ -160,6 +172,10 @@ body.color-blue .text-icon-sm .icon-wrapper .icon-hover {
 body.color-blue .table .cell-marker {
   background: #00bffe;
   border-color: #00bffe;
+}
+
+body.color-blue .testimonial-card:after {
+  color: #00bffe;
 }
 
 body.color-blue .nav-tabs > li.active > a,body.color-blue .nav-tabs > li > a:hover {
@@ -475,6 +491,41 @@ h6 {
   margin: 0 0 15px;
   padding: 0;
   text-transform: uppercase;
+}
+
+.divider-lg {
+  clear: both;
+  height: 45px;
+}
+
+@media (max-width: 767px) {
+  .divider-lg {
+    height: 15px;
+  }
+}
+
+.divider {
+  clear: both;
+  height: 20px;
+}
+
+.divider-sm {
+  clear: both;
+  height: 10px;
+}
+
+.divider-line {
+  clear: both;
+  height: 50px;
+  margin-top: 50px;
+  border-top: 1px solid #fede00;
+}
+
+@media (max-width: 767px) {
+  .divider-line {
+    margin-top: 30px;
+    height: 30px;
+  }
 }
 
 .marker-list {
@@ -3050,6 +3101,56 @@ body.slide-active {
 
 /*-----  3.4 Testimonials block  --------*/
 
+.testimonial-card {
+  position: relative;
+  float: left;
+  width: calc(33.333% - 20px);
+  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 30px;
+  margin-top: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 1199px) {
+  .testimonial-card {
+    width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 767px) {
+  .testimonial-card {
+    width: 100%;
+  }
+}
+
+.testimonial-card:after {
+  content: '“';
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  font-size: 150px;
+  color: #fede00;
+}
+
+.testimonial-card-title {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.testimonial-card-title h5 {
+  text-transform: none;
+}
+
+.testimonial-card-text {
+  margin-top: 20px;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.testimonial-card-rating {
+  margin-top: 15px;
+}
+
 /*-----  3.5 Person Block        --------*/
 
 .person {
@@ -3100,8 +3201,191 @@ body.slide-active {
 
 /*-----  3.7 Blog page           --------*/
 
+.blog-post {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 767px) {
+  .blog-post {
+    margin-bottom: 50px;
+  }
+}
+
+.blog-post .post-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+}
+
+.blog-post .post-video iframe,.blog-post .post-video object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.blog-post .post-image {
+  position: relative;
+  margin-bottom: 38px;
+  border-radius: 0;
+}
+
+.blog-post .post-image img {
+  width: 100%;
+}
+
+.blog-post .post-image .post-link-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.blog-post .post-image .post-link {
+  font-size: 42px;
+  line-height: 1em;
+  color: #fff;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .blog-post .post-image .post-link {
+    font-size: 4vw;
+  }
+}
+
+.blog-post .post-image .post-link:hover {
+  color: #fede00;
+  text-decoration: none;
+}
+
+.blog-post .post-title {
+  margin-bottom: 28px;
+  line-height: 1.4em;
+  max-width: 720px;
+}
+
+.blog-post .post-meta {
+  margin: 0 0 26px;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+.blog-post .post-meta li {
+  float: left;
+  font-size: 14px;
+  padding-right: 40px;
+}
+
+.blog-post .post-meta li i.icon,.blog-post .post-meta li span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.blog-post .post-meta li i.icon {
+  font-size: 20px;
+  padding-right: 7px;
+  color: #fede00;
+}
+
+.blog-post .post-meta li:last-child {
+  padding-right: 0;
+}
+
+.blog-post .post-meta li .author {
+  font-size: 15px;
+}
+
+@media (max-width: 767px) {
+  .blog-post .post-meta li {
+    padding-right: 15px;
+  }
+}
+
+.blog-post .post-author {
+  margin: 20px 0 25px;
+}
+
+.blog-post .post-author img {
+  margin-right: 20px;
+}
+
+.blog-post.single {
+  margin-bottom: 0;
+}
+
 .view-more-post {
   margin-bottom: 30px;
+}
+
+.blog-isotope {
+  overflow: hidden;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  overflow: visible;
+}
+
+.blog-isotope .post-meta li.author {
+  display: none;
+}
+
+.blog-isotope .post-image {
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: -20px;
+}
+
+.blog-isotope .blog-post {
+  position: relative;
+  float: left;
+  width: calc(33.333% - 20px);
+  padding: 20px 20px 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 1199px) {
+  .blog-isotope .blog-post {
+    width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 767px) {
+  .blog-isotope .blog-post {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .blog-isotope .post-image {
+    margin-bottom: 15px;
+  }
+
+  .blog-isotope .post-meta {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+
+  .blog-isotope .post-title {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  .blog-isotope .post-image .post-link {
+    font-size: 22px;
+  }
 }
 
 /*-----  3.8 Appointment Form    --------*/

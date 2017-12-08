@@ -26,18 +26,20 @@ class FrontAsset extends AssetBundle {
  * purifycss .\domains\yii2_basic_yii2tech_content\views\frontend\css\*_pf.css index.html -m -i -o front.min.css
  * purifycss .\domains\yii2_basic_yii2tech_content\views\frontend\css\*_pf.css index.html -i -o front.css
  */
-		YII_ENV_DEV ? 'css/front.min.css' : 'css/front.min.css',
+		YII_ENV_DEV ? 'css/front.css' : 'css/front.min.css',
 	];
 	public $js = [
 		'js/slick.js',
 		'js/moment.js',
+		'js/imagesloaded.pkgd.min.js',
+		'js/isotope.pkgd.min.js',
 		'js/custom.js',
 	];
 	public $depends = [
 		'app\assets\AppAsset',
 	];
 	public $jsOptions = [
-		'position' => View::POS_HEAD
+		'position' => View::POS_END
 	];
 
 }

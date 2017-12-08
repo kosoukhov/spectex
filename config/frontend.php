@@ -43,9 +43,12 @@ return yii\helpers\ArrayHelper::merge(
 						'defaults' => ['page' => 'index'],
 					],
 					[
-						'pattern' => '<page:[\w-]+>',
+						//'pattern' => '<page:[\w-]+>',
+						'pattern' => '<page:(camber|conditioner|contacts|diag|heater|techobslug|tire|zamena|index)>',
 						'route' => '/site/load',
 					],
+					'<controller:[\w-]+>' => '<controller>/index',
+					'<controller:[\w-]+>/<id:\d+>' => '<controller>/view/',
 				
 				//'<_a:(about|contacts|captcha)>' => 'site/default/<_a>',
 				//'/<action:[\w-]+>' => '/site/<action>',
