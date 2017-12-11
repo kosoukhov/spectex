@@ -35,8 +35,8 @@ $frontAsset = FrontAsset::register($this);
 		<?php $this->beginBody() ?>
 		<?= Yii::$app->params['counters']['yandex'] ?>
 		<!-- Loader -->
-		<?php //$this->beginContent('@app/views/frontend/layouts/_loader.php'); ?>
-		<?php //$this->endContent(); ?>
+		<?php $this->beginContent('@app/views/frontend/layouts/_loader.php'); ?>
+		<?php $this->endContent(); ?>
 		<!-- //Loader -->
 		<!-- Header -->
 		<header class="page-header header-sticky">
@@ -54,8 +54,8 @@ $frontAsset = FrontAsset::register($this);
 						<div class="header-info-toggle"><i class="icon-arrow_down js-info-toggle"></i></div>					
 						<div class="logo">
 							<a href="index">
-								<?php //$this->beginContent('@app/views/frontend/layouts/_logo.php'); ?>
-								<?php //$this->endContent(); ?>
+								<?php $this->beginContent('@app/views/frontend/layouts/_logo.php'); ?>
+								<?php $this->endContent(); ?>
 							</a>
 						</div>
 						<div class="header-right">
