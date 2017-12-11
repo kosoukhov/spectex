@@ -45,7 +45,7 @@ $frontAsset = FrontAsset::register($this);
 					<div class="header-info-mobile">
 						<div class="header-info-mobile-inside">
 							<p><i class="icon icon-locate"></i>Московская обл., городской округ Домодедово, Ям с., ул. Почтовая</p>
-							<p><i class="icon icon-phone"></i>+7 (985) 226-26-54,  +7 (903) 500-88-58</p>
+							<p><i class="icon icon-phone"></i>+7 (985) 226-26-54,  +7 (903) 500-88-58, +7 (916) 121-03-12</p>
 							<p><i class="icon icon-clock"></i>Пон-Вск: 09:00 - 19:00</p>
 							<p><i class="icon icon-email"></i><a href="mailto:<?= Yii::$app->params['siteMail'] ?>"><?= Yii::$app->params['siteMail'] ?></a></p>
 						</div>
@@ -208,13 +208,13 @@ $frontAsset = FrontAsset::register($this);
 				<div class="footer-col-left">
 					<div class="inside">
 						<div class="footer-phone">
-							<h2 class="h-phone">Телефоны:<br><span class="number">+7 (985) 226-26-54,<br>+7 (903) 500-88-58</span></h2>
+							<h2 class="h-phone">Телефоны:<br><span class="number">+7 (985) 226-26-54,<br>+7 (903) 500-88-58, <br>+7 (916) 121-03-12</span></h2>
 						</div>
 						<div class="contact-info">
 							<i class="icon icon-locate"></i>Московская обл., городской округ Домодедово, Ям с., ул. Почтовая
 						</div>
 						<div class="contact-info">
-							<i class="icon icon-clock"></i>Понедельник-Воскресенье <span class="color">09:00 - 19:00</span>
+							<i class="icon icon-clock"></i>Понедельник-Воскресенье <br><span class="color">09:00 - 19:00</span>
 						</div>
 						<div class="contact-info"><i class="icon icon-email"></i><a href="mailto:<?= Yii::$app->params['siteMail'] ?>"><?= Yii::$app->params['siteMail'] ?></a></div>
 					</div>
