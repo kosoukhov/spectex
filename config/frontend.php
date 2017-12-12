@@ -20,7 +20,7 @@ return yii\helpers\ArrayHelper::merge(
 				],
 				'overrideStorage' => [
 					'class' => 'yii2tech\content\DbStorage',
-					'table' => '{{%Page}}',
+					'table' => '{{%page}}',
 					'contentAttributes' => [
 						'title',
 						'body',
