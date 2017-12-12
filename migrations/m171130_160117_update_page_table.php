@@ -3,9 +3,9 @@
 use yii\db\Migration;
 
 /**
- * Class m171205_121237_update_page_table
+ * Class m171130_160117_update_page_table
  */
-class m171205_121237_update_page_table extends Migration {
+class m171130_160117_update_page_table extends Migration {
 
 	/**
 	 * @inheritdoc

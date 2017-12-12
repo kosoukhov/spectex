@@ -11,6 +11,11 @@ class m171120_145136_create_page_table extends Migration {
 	 * @inheritdoc
 	 */
 	public function safeUp() {
+		$tableOptions = null;
+		if ($this->db->driverName === 'mysql') {
+			$tableOptions = 'CHARACTER SET utf8 COLLATE utf8_general_ci ENGINE=InnoDB';
+		}
+		
 		$tableName = 'page';
 		$columns = [
 			'id' => $this->string(),
