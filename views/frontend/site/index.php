@@ -9,6 +9,6 @@ $this->registerMetaTag([
 	'name' => 'keywords',
 	'content' => ($contentItem->render('tag')),
 ]);
-$this->title = null;
+$this->title = $contentItem->render('tag');
 ?>
 <?= $contentItem->render('body') ?>
